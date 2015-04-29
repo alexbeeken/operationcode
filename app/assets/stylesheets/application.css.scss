@@ -54,11 +54,13 @@ video {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+
 }
 
 .gi-bill {
   margin-top: -5px;
   padding-left: 25px;
+  background-size: contain;
   background-image: image-url('gi-bill.jpg');
   width: 100%;
   height: 100%;
@@ -66,6 +68,18 @@ video {
   background-attachment: fixed;
   background-position: center;
 }
+
+@media only screen and (max-width: 600px) {
+          .gi-bill {
+              background-image: image-url('gi-bill-290.jpg');
+          }
+      }
+
+@media only screen and (min-width: 601px) {
+          .gi-bill {
+              background-image: image-url('gi-bill.jpg');
+          }
+      }
 
 .mentor {
   margin-top: -5px;

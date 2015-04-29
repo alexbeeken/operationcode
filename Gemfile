@@ -51,6 +51,12 @@ gem 'annotate', '2.5.0' #JDavis: this adds the table fields to the model file.  
 # Development Tools #
 #####################
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'pry'
+end
+
 group :development do
   gem 'pry-rails'
   gem 'better_errors'
