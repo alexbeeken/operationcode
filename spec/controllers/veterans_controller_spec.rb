@@ -4,11 +4,19 @@ describe VeteransController do
 
   describe 'GET #index' do
 
+    before(:each) do
+
+      @veteran = FactoryGirl.create(:veteran)
+
+    end
+
     it "returns all veteran objects" do
 
       get :index
 
-      expect(response.status).to eq(200)
+      binding.pry
+
+      expect(response.body).to eq([@veteran])
 
     end
   end
